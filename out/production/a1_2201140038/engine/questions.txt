@@ -1,0 +1,23 @@
+First index of document (start from title or body?):
+	start from title
+
+Example of valid word, invalid word, stopword, keyword:
+
+I'm in love123 with my wife.
+		pre - text - suffix
+I'm  		      I'm		-> valid word  -> stop word
+in		      in		-> valid word  -> stop word
+love123		      love  123    	-> invalid word -> text : love123
+with		      with		-> valid word	-> stop word
+my                    my		-> valid word	-> stop word
+wife.                 wife   .    	-> valid word	-> keyword
+
+
+school's             school     's	-> valid word -> keyword
+we'd			we	'd	-> valid word -> stop word
+
+'s's 			's	's 	-> valid word
+'sa			'sa		-> valid word
+'d				'd	-> invalid word -> text : 'd
+'d's			'd	's	-> valid word
+
